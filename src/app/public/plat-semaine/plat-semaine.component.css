@@ -1,0 +1,10 @@
+.semaine{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+.jours{
+  min-width: 600px;
+}
