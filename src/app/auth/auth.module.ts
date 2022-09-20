@@ -10,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import {FormsModule} from "@angular/forms";
+import { ModalRegisterComponent } from './modal-register/modal-register.component';
 
 const materialModules = [
   MatButtonModule,
@@ -22,7 +23,8 @@ const materialModules = [
   declarations: [
     MdpOublieComponent,
     MonCompteComponent,
-    ModalLoginComponent
+    ModalLoginComponent,
+    ModalRegisterComponent
   ],
     imports: [
         CommonModule,

@@ -9,7 +9,7 @@ import {CartService} from "../../_services/cart.service";
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css']
 })
-export class LayoutComponent  {
+export class LayoutComponent implements OnInit{
 
 
   constructor(
@@ -20,8 +20,13 @@ export class LayoutComponent  {
   public isAuthUser: boolean = this.tokenService.isLoggedAsUser();
   public isAuthAdmin: boolean = this.tokenService.isLoggedAsAdmin();
 
+  public firstname = '';
 
-  openDialog(){
+ngOnInit() {
+  this.firstname = this.tokenService.getUserInfo().firstname;
+}
+
+  openDialogLogin(){
     this.dialogRef.open(ModalLoginComponent,{
       data : {
         name : 'Samuel'

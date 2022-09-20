@@ -9,6 +9,7 @@
 .item{
     display: flex;
     align-items: center;
+    padding-top: 20px;
 }
 
 .commandes{
@@ -24,4 +25,11 @@
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
+}
+.pass{
+    display: grid;
+    padding-top: 25px;
+}
+.button{
+    padding-top: 30px;
 }
